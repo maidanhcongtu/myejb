@@ -7,10 +7,7 @@
   <module>
     <web>
       <web-uri>myejb-war-1.0.war</web-uri>
-      <context-root>/myejb-root</context-root>
+      <context-root>/myejb</context-root>
     </web>
-  </module>
-  <module>
-    <ejb>myejb-ejb-1.0.jar</ejb>
   </module>
 </application>
