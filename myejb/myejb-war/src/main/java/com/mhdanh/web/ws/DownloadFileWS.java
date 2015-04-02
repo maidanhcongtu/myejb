@@ -25,6 +25,6 @@ public class DownloadFileWS {
 	@Path("/download")
 	public void downloadFile(@QueryParam("fileName") String fileName,@Context HttpServletResponse response) throws IOException{
 		logger.log(Level.WARNING,"Download file name:" + fileName);
-		//utility.downloadFile(response, fileName, "okman.jsp");
+		utility.downloadFile(response, fileName, utility.getFileNameFromPath(fileName));
 	}
 }
