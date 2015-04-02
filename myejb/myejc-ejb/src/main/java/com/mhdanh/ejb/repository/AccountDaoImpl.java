@@ -8,11 +8,9 @@ import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 
 import com.mhdanh.ejb.domain.Account;
 
-@Transactional
 @Stateless
 public class AccountDaoImpl implements AccountDao{
 	
