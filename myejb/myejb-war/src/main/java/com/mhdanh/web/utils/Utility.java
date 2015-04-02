@@ -13,6 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 @Stateless
 public class Utility {
 	private static Logger logger = Logger.getLogger(Utility.class.getName());
+	
+	public String getFileNameFromPath(String path){
+		File file = new File(path);
+		return file.getName();
+	}
+	
 	public boolean downloadFile(HttpServletResponse response,String inputFile,String filename) throws IOException{
 		File file = new File(inputFile);
 		if(file.exists()){
